@@ -61,7 +61,7 @@ const UserForm = () => {
             setDisplayedFormData([...formFields])
             Swal.fire({
                 title: "Success",
-                text: "Informatrion submitted successfully",
+                text: "Information Submitted Successfully",
                 icon: "success"
             });
         }
