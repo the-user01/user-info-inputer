@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Swal from "sweetalert2";
 
 const UserForm = () => {
 
@@ -58,7 +59,11 @@ const UserForm = () => {
 
         if (validateForm()) {
             setDisplayedFormData([...formFields])
-            alert("Form submitted successfully!")
+            Swal.fire({
+                title: "Success",
+                text: "Informatrion submitted successfully",
+                icon: "success"
+            });
         }
     }
 
